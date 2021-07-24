@@ -558,7 +558,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.123), black), url("/images/img_footer@2x.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.123), black), url("./images/img_footer@2x.png");
   height: 36rem;
   background-position: 0 30%;
   background-repeat: no-repeat;
