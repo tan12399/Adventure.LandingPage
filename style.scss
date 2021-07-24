@@ -1,0 +1,661 @@
+@font-face {
+  font-family: "Adevale";
+  src: url("./fonts/Adevale.ttf");
+}
+
+@font-face {
+  font-family: TT Lakes;
+  src: local("TT Lakes")
+}
+
+@font-face {
+  font-family: "Teko-Light";
+  src: url("./fonts/Teko-Light.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #edf0f2;
+}
+
+.container {
+  width: 160rem;
+  margin: auto;
+}
+
+// .wrapper {
+//     max-width: 1920px;
+//     margin: 0 auto;
+// }
+
+.header {
+  padding-top: 4.09rem;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    position: relative;
+    padding-left: 6rem;
+    text-align: center;
+    max-width: 22.3rem;
+  }
+  &__text {
+    font-family: "Adevale";
+    padding-left: 6rem;
+    font-size: 5.5rem;
+    position: absolute;
+    letter-spacing: 0.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // căn giữa khi dùng absolute
+  }
+  &__image {
+    width: 13.668rem;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      justify-content: center;
+    }
+    &-item {
+      letter-spacing: 2px;
+      &:first-child {
+        padding-right: 45px;
+      }
+      &:nth-child(2) {
+        padding: 0 6rem;
+        border-right: 1px solid #a9abac;
+      }
+      &:nth-child(3) {
+        padding-left: 45px;
+      }
+      &:nth-child(4) {
+        padding: 0 50px;
+      }
+    }
+    &-link {
+      font-family: "Teko-Light";
+      font-weight: lighter;
+      font-size: 25px;
+      color: #000;
+    }
+  }
+}
+
+
+.row {
+  display: flex;
+  position: relative;
+  // cái ni dùng lại
+  // k cần phải code nhiều ok
+}
+.banner {
+  font-family: "Teko", sans-serif;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 17.6rem;
+    word-wrap: break-word;
+    width: 28.6rem;
+    color: #e4003b;
+    line-height: 13rem;
+    padding-left: 5rem;
+    margin-right: 7rem;
+  }
+  &__desc {
+    width: 28.6rem;
+    font-size: 1.4rem;
+    padding-left: 5rem;
+    margin-right: 7rem;
+  }
+  &__horizontal {
+    height: 6.7rem;
+    font-size: 5.5rem;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    transform: rotate(270deg) translate(-50%, -50%);
+  }
+  &__logo {
+    img {
+      width: 100%;
+    }
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 6rem;
+    line-height: 3.9rem;
+    &-item {
+      color: #000;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.challenges {
+  padding-top: 12rem;
+  &__popular {
+    flex-basis: 100.6rem;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  &__heading {
+    font-family: "Teko", sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    line-height: 6rem;
+  }
+  img,
+  &__info {
+    width: 100%;
+  }
+  img {
+    width: 50.8rem;
+  }
+
+  &__info {
+    padding-left: 4rem;
+  }
+  &__text {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #e4003b;
+  }
+
+  &__title {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2.8rem;
+  }
+
+  &__desc {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    i {
+      font-size: 2.7rem;
+      color: #e4003b;
+      margin-right: 2rem;
+    }
+  }
+  &__more {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__mission {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    &-heading {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-number {
+      font-family: "Teko", sans-serif;
+      font-size: 6rem;
+      line-height: 6rem;
+      color: #e4003b;
+      font-weight: 600;
+    }
+    &-under {
+      font-family: "Teko", sans-serif;
+      font-size: 17.4rem;
+      line-height: 14rem;
+      letter-spacing: 1.6rem;
+      height: 38.8rem;
+      color: #fff;
+      font-weight: 600;
+      width: 49rem;
+      word-wrap: break-word;
+    }
+    &-above {
+      font-family: "Adevale", sans-serif;
+      font-size: 9.6rem;
+      color: #e4003b;
+      font-weight: 500;
+      position: absolute;
+      transform: rotate(-15deg);
+      top: 5%;
+      left: 57%;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      top: 12%;
+      left: 0;
+    }
+    &-text {
+      padding-left: 4.49rem;
+      width: 44.5rem;
+      padding-top: 34.3rem;
+    }
+    &-title {
+      font-family: "Teko", sans-serif;
+      font-size: 6rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+    &-desc1 {
+      font-family: "Teko", sans-serif;
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 3.7rem;
+      margin-bottom: 2.1rem;
+    }
+    &-desc2 {
+      font-family: "TT Lakes", sans-serif;
+      font-size: 1.4rem;
+      height: 11.7rem;
+      line-height: 2.6rem;
+      margin-bottom: 0.81rem;
+    }
+  }
+}
+
+.results {
+  &__inner {
+    padding-left: 6rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14.5rem;
+    margin-bottom: 14.1rem;
+  }
+  &__info {
+    font-family: "Teko", sans-serif;
+  }
+  &__text {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  &__number {
+    font-size: 28rem;
+    color: #e4003b;
+    line-height: 24rem;
+  }
+  &__desc {
+    font-size: 6rem;
+    width: 30rem;
+    word-wrap: break-word;
+    line-height: 5.8rem;
+    font-weight: 600;
+    margin-bottom: 2.9rem;
+  }
+  span {
+    color: #e4003b;
+  }
+  img {
+    width: 100%;
+  }
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    i {
+      font-size: 2.7rem;
+      color: #e4003b;
+      margin-right: 2rem;
+    }
+  }
+  &__more {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.15rem;
+  }
+  &__image {
+    position: relative;
+    height: 102rem;
+    margin-left: 8.5rem;
+    img {
+      height: 100%;
+    }
+  }
+  &__share {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 25.5rem;
+    padding-left: 4.4rem;
+    padding-bottom: 6.9rem;
+    font-family: "Teko", sans-serif;
+    border: 3rem solid #e4003b;
+    color: #fff;
+    width: 49.2rem;
+    &-title {
+      text-transform: uppercase;
+      font-size: 6rem;
+      margin-bottom: 4.5rem;
+      line-height: 5.4rem;
+      font-weight: 500;
+    }
+    &-desc {
+      font-size: 3.6rem;
+      margin-bottom: 6.5rem;
+      line-height: 3.7rem;
+    }
+  }
+}
+
+
+.advice {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6rem;
+    margin-bottom: 17.5rem;
+  }
+  &__horizontal {
+    text-transform: uppercase;
+    font-size: 17.4rem;
+    color: #e4003b;
+    font-family: "Teko", sans-serif;
+    transform: rotate(-90deg);
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    margin-left: -17rem;
+    margin-right: -10rem;
+  }
+  &__img {
+    position: relative;
+    flex-grow: 1;
+    img {
+      height: 61.2rem;
+      width: 100%;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 3.5rem 6.7rem 1.3rem 5.5rem ;
+    width: 49.2rem;
+    background-color: #EDF0F2;
+  }
+  &__title {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 0.1rem;
+  }
+  &__desc {
+    font-size: 1.4rem;
+    font-family: "TT Lakes", sans-serif;
+    padding-bottom: 2.2rem;
+    line-height: 2.6rem;
+  }
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    i {
+      font-size: 2.7rem;
+      color: #e4003b;
+      margin-right: 2rem;
+    }
+  }
+  &__more {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.15rem;
+  }
+  &__number {
+    position: absolute;
+    width: 17.3rem;
+    height: 17.3rem;
+    background-color: #EDF0F2;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-main {
+      font-size: 6rem;
+      font-family: "Teko", sans-serif;
+      line-height: 1;
+      font-weight: 600;
+      text-align: end;
+      width: 7rem;
+      border-bottom: 1px solid #e4003b;
+      margin-bottom: 1.1rem;
+    }
+    &-sub {
+      font-size: 1.7rem;
+      font-family: "Teko", sans-serif;
+      font-weight: 600;
+      width: 7rem;
+      text-align: end;
+    }
+  }
+}
+
+.gallery {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18rem;
+  }
+  &__item {
+    width: calc(calc(100% / 3) - calc(80 / 3));
+  }
+  &__image {
+    position: relative;
+    img {
+      width: 50.8rem;
+      height: 50.8rem;
+    }
+    i {
+      position: absolute;
+      font-size: 2.5rem;
+      color: #edf0f2;
+      top: 10%;
+      left: 10%;
+    }
+  }
+  &__sub {
+    position: absolute;
+    font-family: "Teko", sans-serif;
+    color: #edf0f2;
+    bottom: 0rem;
+    margin-left: 4.3rem;
+    margin-bottom: 2.5rem;
+    &-time {
+      font-size: 1.6rem;
+      span {
+        text-transform: uppercase;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 1.5px solid #edf0f2;
+      }
+    }
+    &-desc {
+      font-size: 3.6rem;
+      line-height: 3.7rem;
+    }
+  }
+  &__info {
+    width: 50.8rem;
+    height: 50.8rem;
+    padding: 10rem 9.5rem 10rem 3.5rem;
+    position: relative;
+  }
+  &__title {
+    font-family: "Teko", sans-serif;
+    font-size: 10.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  &__over {
+    position: absolute;
+    font-family: "Adevale", sans-serif;
+    font-size: 7rem;
+    color: #e4003b;
+    font-weight: lighter;
+    top: 31%;
+    right: 20%;
+    transform: rotate(-15deg);
+  }
+  &__desc {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    i {
+      font-size: 2.7rem;
+      color: #e4003b;
+      margin-right: 2rem;
+    }
+  }
+  &__more {
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.15rem;
+  }
+}
+
+.footer {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 1) ) ,url("/images/img_footer@2x.png");
+    height: 36rem;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  &__logo {
+    position: relative;
+    padding-left: 9rem;
+    text-align: center;
+    max-width: 22.3rem;
+    color: #edf0f2;
+  }
+  &__text {
+    font-family: "Adevale";
+    padding-left: 9rem;
+    font-size: 5.5rem;
+    position: absolute;
+    letter-spacing: 0.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // căn giữa khi dùng absolute
+  }
+  &__image {
+    width: 13.7rem;
+    color: #edf0f2;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    position: relative;
+    padding-left: 13rem;
+    align-self: flex-start;
+    padding-top: 5rem;
+    letter-spacing: 0.1rem;
+    a {
+      font-size: 1.4rem;
+      font-family: "TT Lakes", sans-serif;
+      line-height: 2.6rem;
+      color: #edf0f2;
+      font-weight: lighter;
+      padding-bottom: 0.5rem;
+    }
+
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 1.2rem;
+    font-weight: 500;
+    color: #e4003b;
+  }
+  &__social {
+    margin-top: 4.5rem;
+    position: absolute;
+    bottom: -18%;
+    a {
+      font-size: 2rem;
+      margin-right: 1.2rem;
+    }
+  }
+}

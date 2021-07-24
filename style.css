@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Adevale";
+  src: url("./fonts/Adevale.ttf");
+}
+@font-face {
+  font-family: TT Lakes;
+  src: local("TT Lakes");
+}
+@font-face {
+  font-family: "Teko-Light";
+  src: url("./fonts/Teko-Light.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #edf0f2;
+}
+
+.container {
+  width: 160rem;
+  margin: auto;
+}
+
+.header {
+  padding-top: 4.09rem;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  position: relative;
+  padding-left: 6rem;
+  text-align: center;
+  max-width: 22.3rem;
+}
+.header__text {
+  font-family: "Adevale";
+  padding-left: 6rem;
+  font-size: 5.5rem;
+  position: absolute;
+  letter-spacing: 0.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__image {
+  width: 13.668rem;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: center;
+}
+.header__menu-item {
+  letter-spacing: 2px;
+}
+.header__menu-item:first-child {
+  padding-right: 45px;
+}
+.header__menu-item:nth-child(2) {
+  padding: 0 6rem;
+  border-right: 1px solid #a9abac;
+}
+.header__menu-item:nth-child(3) {
+  padding-left: 45px;
+}
+.header__menu-item:nth-child(4) {
+  padding: 0 50px;
+}
+.header__menu-link {
+  font-family: "Teko-Light";
+  font-weight: lighter;
+  font-size: 25px;
+  color: #000;
+}
+
+.row {
+  display: flex;
+  position: relative;
+}
+
+.banner {
+  font-family: "Teko", sans-serif;
+}
+.banner__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__title {
+  font-weight: 600;
+  font-size: 17.6rem;
+  word-wrap: break-word;
+  width: 28.6rem;
+  color: #e4003b;
+  line-height: 13rem;
+  padding-left: 5rem;
+  margin-right: 7rem;
+}
+.banner__desc {
+  width: 28.6rem;
+  font-size: 1.4rem;
+  padding-left: 5rem;
+  margin-right: 7rem;
+}
+.banner__horizontal {
+  height: 6.7rem;
+  font-size: 5.5rem;
+  position: absolute;
+  left: -10%;
+  top: 20%;
+  transform: rotate(270deg) translate(-50%, -50%);
+}
+.banner__logo img {
+  width: 100%;
+}
+.banner__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  margin-top: 6rem;
+  line-height: 3.9rem;
+}
+.banner__icon-item {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.challenges {
+  padding-top: 12rem;
+}
+.challenges__popular {
+  flex-basis: 100.6rem;
+}
+.challenges__container {
+  display: flex;
+  justify-content: space-between;
+}
+.challenges__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.challenges__heading {
+  font-family: "Teko", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+  line-height: 6rem;
+}
+.challenges img, .challenges__info {
+  width: 100%;
+}
+.challenges img {
+  width: 50.8rem;
+}
+.challenges__info {
+  padding-left: 4rem;
+}
+.challenges__text {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #e4003b;
+}
+.challenges__title {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2.8rem;
+}
+.challenges__desc {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 2.8rem;
+}
+.challenges__detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.challenges__detail i {
+  font-size: 2.7rem;
+  color: #e4003b;
+  margin-right: 2rem;
+}
+.challenges__more {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+}
+.challenges__mission {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+.challenges__mission-heading {
+  display: flex;
+  justify-content: flex-end;
+}
+.challenges__mission-number {
+  font-family: "Teko", sans-serif;
+  font-size: 6rem;
+  line-height: 6rem;
+  color: #e4003b;
+  font-weight: 600;
+}
+.challenges__mission-under {
+  font-family: "Teko", sans-serif;
+  font-size: 17.4rem;
+  line-height: 14rem;
+  letter-spacing: 1.6rem;
+  height: 38.8rem;
+  color: #fff;
+  font-weight: 600;
+  width: 49rem;
+  word-wrap: break-word;
+}
+.challenges__mission-above {
+  font-family: "Adevale", sans-serif;
+  font-size: 9.6rem;
+  color: #e4003b;
+  font-weight: 500;
+  position: absolute;
+  transform: rotate(-15deg);
+  top: 5%;
+  left: 57%;
+}
+.challenges__mission img {
+  width: 100%;
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+.challenges__mission-text {
+  padding-left: 4.49rem;
+  width: 44.5rem;
+  padding-top: 34.3rem;
+}
+.challenges__mission-title {
+  font-family: "Teko", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.challenges__mission-desc1 {
+  font-family: "Teko", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 3.7rem;
+  margin-bottom: 2.1rem;
+}
+.challenges__mission-desc2 {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 1.4rem;
+  height: 11.7rem;
+  line-height: 2.6rem;
+  margin-bottom: 0.81rem;
+}
+
+.results__inner {
+  padding-left: 6rem;
+}
+.results__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14.5rem;
+  margin-bottom: 14.1rem;
+}
+.results__info {
+  font-family: "Teko", sans-serif;
+}
+.results__text {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.results__number {
+  font-size: 28rem;
+  color: #e4003b;
+  line-height: 24rem;
+}
+.results__desc {
+  font-size: 6rem;
+  width: 30rem;
+  word-wrap: break-word;
+  line-height: 5.8rem;
+  font-weight: 600;
+  margin-bottom: 2.9rem;
+}
+.results span {
+  color: #e4003b;
+}
+.results img {
+  width: 100%;
+}
+.results__detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.results__detail i {
+  font-size: 2.7rem;
+  color: #e4003b;
+  margin-right: 2rem;
+}
+.results__more {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.15rem;
+}
+.results__image {
+  position: relative;
+  height: 102rem;
+  margin-left: 8.5rem;
+}
+.results__image img {
+  height: 100%;
+}
+.results__share {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 25.5rem;
+  padding-left: 4.4rem;
+  padding-bottom: 6.9rem;
+  font-family: "Teko", sans-serif;
+  border: 3rem solid #e4003b;
+  color: #fff;
+  width: 49.2rem;
+}
+.results__share-title {
+  text-transform: uppercase;
+  font-size: 6rem;
+  margin-bottom: 4.5rem;
+  line-height: 5.4rem;
+  font-weight: 500;
+}
+.results__share-desc {
+  font-size: 3.6rem;
+  margin-bottom: 6.5rem;
+  line-height: 3.7rem;
+}
+
+.advice__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6rem;
+  margin-bottom: 17.5rem;
+}
+.advice__horizontal {
+  text-transform: uppercase;
+  font-size: 17.4rem;
+  color: #e4003b;
+  font-family: "Teko", sans-serif;
+  transform: rotate(-90deg);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  margin-left: -17rem;
+  margin-right: -10rem;
+}
+.advice__img {
+  position: relative;
+  flex-grow: 1;
+}
+.advice__img img {
+  height: 61.2rem;
+  width: 100%;
+}
+.advice__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3.5rem 6.7rem 1.3rem 5.5rem;
+  width: 49.2rem;
+  background-color: #EDF0F2;
+}
+.advice__title {
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.advice__desc {
+  font-size: 1.4rem;
+  font-family: "TT Lakes", sans-serif;
+  padding-bottom: 2.2rem;
+  line-height: 2.6rem;
+}
+.advice__detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.advice__detail i {
+  font-size: 2.7rem;
+  color: #e4003b;
+  margin-right: 2rem;
+}
+.advice__more {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.15rem;
+}
+.advice__number {
+  position: absolute;
+  width: 17.3rem;
+  height: 17.3rem;
+  background-color: #EDF0F2;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.advice__number-main {
+  font-size: 6rem;
+  font-family: "Teko", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  text-align: end;
+  width: 7rem;
+  border-bottom: 1px solid #e4003b;
+  margin-bottom: 1.1rem;
+}
+.advice__number-sub {
+  font-size: 1.7rem;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  width: 7rem;
+  text-align: end;
+}
+
+.gallery__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18rem;
+}
+.gallery__item {
+  width: calc(calc(100% / 3) - calc(80 / 3));
+}
+.gallery__image {
+  position: relative;
+}
+.gallery__image img {
+  width: 50.8rem;
+  height: 50.8rem;
+}
+.gallery__image i {
+  position: absolute;
+  font-size: 2.5rem;
+  color: #edf0f2;
+  top: 10%;
+  left: 10%;
+}
+.gallery__sub {
+  position: absolute;
+  font-family: "Teko", sans-serif;
+  color: #edf0f2;
+  bottom: 0rem;
+  margin-left: 4.3rem;
+  margin-bottom: 2.5rem;
+}
+.gallery__sub-time {
+  font-size: 1.6rem;
+}
+.gallery__sub-time span {
+  text-transform: uppercase;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1.5px solid #edf0f2;
+}
+.gallery__sub-desc {
+  font-size: 3.6rem;
+  line-height: 3.7rem;
+}
+.gallery__info {
+  width: 50.8rem;
+  height: 50.8rem;
+  padding: 10rem 9.5rem 10rem 3.5rem;
+  position: relative;
+}
+.gallery__title {
+  font-family: "Teko", sans-serif;
+  font-size: 10.6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.gallery__over {
+  position: absolute;
+  font-family: "Adevale", sans-serif;
+  font-size: 7rem;
+  color: #e4003b;
+  font-weight: lighter;
+  top: 31%;
+  right: 20%;
+  transform: rotate(-15deg);
+}
+.gallery__desc {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+.gallery__detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gallery__detail i {
+  font-size: 2.7rem;
+  color: #e4003b;
+  margin-right: 2rem;
+}
+.gallery__more {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.15rem;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.123), black), url("/images/img_footer@2x.png");
+  height: 36rem;
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__logo {
+  position: relative;
+  padding-left: 9rem;
+  text-align: center;
+  max-width: 22.3rem;
+  color: #edf0f2;
+}
+.footer__text {
+  font-family: "Adevale";
+  padding-left: 9rem;
+  font-size: 5.5rem;
+  position: absolute;
+  letter-spacing: 0.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__image {
+  width: 13.7rem;
+  color: #edf0f2;
+}
+.footer__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  position: relative;
+  padding-left: 13rem;
+  align-self: flex-start;
+  padding-top: 5rem;
+  letter-spacing: 0.1rem;
+}
+.footer__item a {
+  font-size: 1.4rem;
+  font-family: "TT Lakes", sans-serif;
+  line-height: 2.6rem;
+  color: #edf0f2;
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-family: "Teko", sans-serif;
+  padding-bottom: 1.2rem;
+  font-weight: 500;
+  color: #e4003b;
+}
+.footer__social {
+  margin-top: 4.5rem;
+  position: absolute;
+  bottom: -18%;
+}
+.footer__social a {
+  font-size: 2rem;
+  margin-right: 1.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
